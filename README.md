@@ -1,4 +1,4 @@
-# AKELBA Website Ver5.0
+# AKELBA Website Ver5.1
 
 AKELBAの本番公開用公式サイトです。静的HTML/CSS/JavaScriptで構成し、GitHub Pagesでそのまま公開できます。
 

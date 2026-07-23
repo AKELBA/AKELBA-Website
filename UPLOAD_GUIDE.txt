@@ -1,4 +1,4 @@
-AKELBA Website Ver5.0｜GitHubアップロード用
+AKELBA Website Ver5.1｜GitHubアップロード用
 
 【重要】
 ZIPファイル自体をGitHubへ置くのではなく、ZIPを展開して、中にあるファイルとassetsフォルダをリポジトリ直下へアップロードします。
