@@ -1,0 +1,25 @@
+AKELBA Website Ver5.0｜GitHubアップロード用
+
+【重要】
+ZIPファイル自体をGitHubへ置くのではなく、ZIPを展開して、中にあるファイルとassetsフォルダをリポジトリ直下へアップロードします。
+
+アップロード後、リポジトリ直下が次の状態なら正常です。
+- index.html
+- service.html
+- diagnosis.html
+- about.html
+- contact.html
+- privacy.html
+- 404.html
+- assets フォルダ
+- CNAME
+- robots.txt
+- sitemap.xml
+- site.webmanifest
+
+GitHub Pages設定：
+- Source: Deploy from a branch
+- Branch: main
+- Folder: / (root)
+
+独自ドメイン：akelba.jp
