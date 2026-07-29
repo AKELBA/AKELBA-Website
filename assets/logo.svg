@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" role="img" aria-labelledby="t d"><title id="t">AKELBA</title><desc id="d">開いた三角形と独立したターコイズの基線からなるAKELBAロゴ</desc><g transform="translate(8 8)" fill="none" stroke-linejoin="miter"><path d="M5 82 L47 4 L89 82" stroke="#123A5A" stroke-width="13"/><path d="M0 101 H94" stroke="#1FA6A3" stroke-width="10"/></g><text x="126" y="82" fill="#123A5A" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" letter-spacing="3">AKELBA</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 2338.94 984"
+     width="2338.94"
+     height="984"
+     role="img"
+     aria-labelledby="title desc"
+     preserveAspectRatio="xMidYMid meet">
+  <title id="title">AKELBA horizontal logo</title>
+  <desc id="desc">AKELBA official symbol beside the outlined AKELBA wordmark on a transparent background.</desc>
+  <g transform="translate(-68 2) scale(1)">
+    <path id="akelba-a" fill="#0D2B45" d="M500 80 L790 650 L650 650 L500 365 L350 650 L210 650 Z"/>
+    <path id="akelba-base" fill="#2BB3B1" d="M200 770 L800 770 L850 900 L150 900 Z"/>
+  </g>
+  <path fill="#0D2B45" d="M693 397V0H620V206H180V0H108V397Q108 547 186.5 626.5Q265 706 400 706Q536 706 614.5 626.5Q693 547 693 397ZM180 270H620V404Q620 521 562.0 580.5Q504 640 400 640Q296 640 238.0 580.5Q180 521 180 404Z" transform="translate(918.636 580.68) scale(0.253 -0.253)"/>
+    <path fill="#0D2B45" d="M705 0H617L331 329L188 184V0H114V700H188V277L599 700H684L381 383Z" transform="translate(1177.328 580.68) scale(0.253 -0.253)"/>
+    <path fill="#0D2B45" d="M614 80Q571 39 499.5 16.5Q428 -6 341 -6Q249 -6 184.5 19.0Q120 44 87.5 88.0Q55 132 55 189Q55 252 92.5 296.0Q130 340 191 357Q141 376 113.0 417.5Q85 459 85 515Q85 568 115.5 611.5Q146 655 207.5 680.5Q269 706 356 706Q420 706 480.5 691.5Q541 677 584 650L561 591Q469 643 359 643Q262 643 210.5 606.0Q159 569 159 510Q159 451 200.5 419.0Q242 387 318 387H492V323H315Q229 323 179.0 290.5Q129 258 129 194Q129 131 183.5 94.0Q238 57 344 57Q418 57 482.0 78.0Q546 99 586 136Z" transform="translate(1413.216 580.68) scale(0.253 -0.253)"/>
+    <path fill="#0D2B45" d="M580 0H114V700H188V64H580Z" transform="translate(1629.594 580.68) scale(0.253 -0.253)"/>
+    <path fill="#0D2B45" d="M699 187Q699 97 632.5 48.5Q566 0 436 0H114V700H416Q533 700 597.5 653.0Q662 606 662 520Q662 462 633.5 421.5Q605 381 555 361Q624 346 661.5 301.5Q699 257 699 187ZM188 639V385H411Q496 385 542.0 417.5Q588 450 588 512Q588 574 542.0 606.5Q496 639 411 639ZM435 61Q529 61 577.0 93.0Q625 125 625 193Q625 324 435 324H188V61Z" transform="translate(1834.571 580.68) scale(0.253 -0.253)"/>
+    <path fill="#0D2B45" d="M693 397V0H620V206H180V0H108V397Q108 547 186.5 626.5Q265 706 400 706Q536 706 614.5 626.5Q693 547 693 397ZM180 270H620V404Q620 521 562.0 580.5Q504 640 400 640Q296 640 238.0 580.5Q180 521 180 404Z" transform="translate(2081.354 580.68) scale(0.253 -0.253)"/>
+</svg>
