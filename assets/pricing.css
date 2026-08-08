@@ -1,0 +1,374 @@
+.mini-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 20px 0 28px;
+}
+
+.mini-plan {
+  display: grid;
+  align-content: start;
+  gap: 3px;
+  min-width: 0;
+  padding: 15px 13px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, .76);
+}
+
+.mini-plan-featured {
+  border-color: #8fcac8;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(18, 58, 90, .08);
+}
+
+.mini-plan span,
+.mini-plan small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.mini-plan span {
+  color: var(--teal-dark);
+  font-weight: 900;
+}
+
+.mini-plan strong {
+  color: var(--navy);
+  font-size: 20px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.plans-section {
+  overflow: hidden;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+.plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 32px 28px 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 14px 40px rgba(13, 48, 74, .06);
+}
+
+.plan-card-featured {
+  border-color: #86c8c5;
+  background: linear-gradient(160deg, #eefaf9 0%, #fff 38%);
+  box-shadow: 0 22px 54px rgba(13, 48, 74, .12);
+}
+
+.plan-card-monitor {
+  background: linear-gradient(160deg, #f7fbfc 0%, #fff 42%);
+}
+
+.plan-badge {
+  align-self: flex-start;
+  margin-bottom: 18px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #e6f5f4;
+  color: var(--teal-dark);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.plan-card-featured .plan-badge {
+  background: var(--navy);
+  color: #fff;
+}
+
+.plan-kicker {
+  margin: 0 0 7px;
+  color: var(--teal-dark);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+.plan-card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.plan-fit {
+  min-height: 56px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 19px 0 0;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.plan-price strong {
+  font-size: clamp(35px, 3.4vw, 46px);
+  letter-spacing: -.035em;
+}
+
+.plan-price span {
+  font-weight: 900;
+}
+
+.plan-price-note {
+  margin: 8px 0 22px;
+  color: #71838f;
+  font-size: 12px;
+}
+
+.plan-facts {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.plan-facts div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.plan-facts dt,
+.plan-facts dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.plan-facts dt {
+  color: var(--muted);
+}
+
+.plan-facts dd {
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.plan-includes {
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.plan-details {
+  margin: 0 0 24px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.plan-details summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 34px 14px 0;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.plan-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.plan-details summary::after {
+  content: "＋";
+  position: absolute;
+  right: 3px;
+  color: var(--teal-dark);
+  font-size: 18px;
+}
+
+.plan-details[open] summary::after {
+  content: "−";
+}
+
+.plan-details div {
+  padding: 0 0 6px;
+}
+
+.plan-details p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.plan-details strong {
+  color: var(--ink);
+}
+
+.plan-card > .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.price-note {
+  max-width: 960px;
+  margin: 24px auto 0;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.guide-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #fff;
+}
+
+.guide-card span {
+  color: var(--teal-dark);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.guide-card h3 {
+  margin: 13px 0 8px;
+  color: var(--navy);
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.guide-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.plan-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.exclusion-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.exclusion-list li {
+  position: relative;
+  padding: 15px 0 15px 30px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.exclusion-list li::before {
+  content: "—";
+  position: absolute;
+  left: 3px;
+  color: var(--teal-dark);
+  font-weight: 900;
+}
+
+@media (max-width: 960px) {
+  .plan-grid {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .plan-card h3 br {
+    display: none;
+  }
+
+  .plan-fit {
+    min-height: auto;
+  }
+
+  .plan-price strong {
+    font-size: 44px;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-flow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .mini-plan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-plan {
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+  }
+
+  .mini-plan small {
+    grid-column: 1 / -1;
+  }
+
+  .plan-card {
+    padding: 26px 22px 24px;
+  }
+
+  .plan-card h3 {
+    font-size: 25px;
+  }
+
+  .plan-price strong {
+    font-size: 40px;
+  }
+
+  .plan-facts div {
+    grid-template-columns: 82px 1fr;
+  }
+
+  .guide-card {
+    padding: 23px;
+  }
+
+  .plan-flow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-note {
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plan-card,
+  .guide-card,
+  .mini-plan {
+    transition: none;
+  }
+}
