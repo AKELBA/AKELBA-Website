@@ -1,5 +1,28 @@
 (() => {
   const config = window.AKELBA_CONFIG || {};
+  const measurementId = String(config.ga4MeasurementId || '').trim().toUpperCase();
+  const analyticsEnabled = /^G-[A-Z0-9]+$/.test(measurementId);
+
+  const track = (eventName, parameters = {}) => {
+    if (!analyticsEnabled || typeof window.gtag !== 'function') return;
+    window.gtag('event', eventName, parameters);
+  };
+
+  if (analyticsEnabled) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId, {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+
+    const analyticsScript = document.createElement('script');
+    analyticsScript.async = true;
+    analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+    document.head.appendChild(analyticsScript);
+  }
+
   const header = document.querySelector('[data-header]');
   const menuButton = document.querySelector('[data-menu-button]');
   const nav = document.querySelector('[data-nav]');
@@ -32,6 +55,45 @@
   });
   document.querySelectorAll('[data-instagram-link]').forEach(link => { if(config.instagram) link.href = config.instagram; });
   document.querySelectorAll('[data-form-link]').forEach(link => { if(config.diagnosisForm) link.href = config.diagnosisForm; });
+
+  document.addEventListener('click', event => {
+    const target = event.target instanceof Element ? event.target.closest('a') : null;
+    if (!target) return;
+
+    const href = target.getAttribute('href') || '';
+    const mailType = target.dataset.mailTemplate;
+    if (mailType) {
+      track('contact_start', {
+        contact_method: 'email',
+        contact_type: mailType,
+        link_text: target.textContent.trim().slice(0, 100)
+      });
+      return;
+    }
+
+    if (target.hasAttribute('data-instagram-link')) {
+      track('contact_start', {
+        contact_method: 'instagram',
+        link_text: target.textContent.trim().slice(0, 100)
+      });
+      return;
+    }
+
+    if (target.hasAttribute('data-form-link')) {
+      track('diagnosis_start', {
+        contact_method: 'form',
+        link_text: target.textContent.trim().slice(0, 100)
+      });
+      return;
+    }
+
+    if (/^(?:\.\/)?(?:diagnosis|contact)\.html(?:[?#].*)?$/.test(href)) {
+      track('cta_click', {
+        destination: href.split(/[?#]/)[0],
+        link_text: target.textContent.trim().slice(0, 100)
+      });
+    }
+  });
 
   const reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
